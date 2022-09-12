@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>Home Page!</h1>
+    <p>Hello {{content}}!!!!!</p>
+    {% for x in range(10)%}
+        {% if x%2 ==0 %}
+            <p>{{x}}</p>
+        {% endif %} {% endfor %}
+    {% for x in mylist %}
+        {% if x == "Mamu" %}
+            <p>MAMU</p>
+        {% else %}
+            <p>{{x}}</p>
+        {% endif %}
+    {% endfor %}
+
+
+</body>
+</html>
